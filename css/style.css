@@ -1724,4 +1724,30 @@ a.maplink:visited {
  .shape {
   fill: #0E1822;
  }
+
+ /*--------- reproductor ----------*/
+.playpause {
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+	position: fixed;
+	bottom: 16px;
+	right:5px;
+	display: block;
+	background: #e93b38;
+  z-index: 99999;
+}
+  
+.playpause .button {
+	width: 15px;
+	height: 15px;
+	background: #f0f0f0;
+	transition: inherit;
+	clip-path: polygon(0 0, 50% 25%, 50% 75%, 50% 75%, 50% 25%, 100% 50%, 100% 50%, 0 100%);
+}
+  
+.playpause.playing .button {
+	clip-path: polygon(0 0, 40% 0, 40% 100%, 60% 100%, 60% 0, 100% 0, 100% 100%, 0 100%);
+}
  

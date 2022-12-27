@@ -48,12 +48,6 @@
       e.preventDefault();
     });
 
-    /*Player*/
-    $('.music').on("click", function (e) {
-      $('.player').fadeToggle();
-      e.preventDefault();
-    });
-
     /*CountDown*/
     $('.married_coundown').countdown({until: new Date("Jan 28, 2023 21:00:00")});
 
@@ -114,3 +108,13 @@
 
   });
 }(jQuery));
+
+//music
+let music = document.getElementById(`my_audio`);
+const playpause = document.querySelector('.playpause');
+
+playpause.addEventListener('click', () => {
+  playpause.classList.toggle('playing');
+
+  music.paused? music.play(): music.pause();
+});
