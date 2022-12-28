@@ -1274,7 +1274,7 @@ header {
   height: 13%;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top:1px solid red ;
+  border-top:1px solid #e93b38 ;
 }
 
 .footer .over {
@@ -1297,6 +1297,7 @@ header {
 .footer_txt {
   opacity: 0.8;
   padding: 0 24px;
+  color: #e93b38;
 }
 
 .footer_social {
